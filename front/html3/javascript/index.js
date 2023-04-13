@@ -7,12 +7,12 @@ function func0() {
 // 일식
 function func1(){
     basic.style.display = "none";
-    american.style.display= "block";
-    japanese.style.display = "none";
+    american.style.display= "none";
+    japanese.style.display = "block";
 }
 // 양식
 function func2(){
     basic.style.display = "none";
-    american.style.display= "none";
-    japanese.style.display = "black";
+    american.style.display= "block";
+    japanese.style.display = "none";
 }
