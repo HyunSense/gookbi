@@ -1,2 +1,2 @@
-# gooookbi
-goookbi practice
+# gookbi
+gookbi practice
