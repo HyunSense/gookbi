@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+header {
+    position: absolute; top: 0; left: 0;
+    z-index: ;
+    width: 100%;
+    height: 100;
+    background: black; color: white;
+    font-size: 3rem; line-height: 100px;
+    text-indent: 50px;
+    /* position: fixed; */
+}
+
+.title {
+    width: 100%; height: 50px;
+    border: 0px solid blue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    margin-top: 100px;
+}
+
+.title_2 {
+    width: 100%; height: 100px;
+    font-size: 2rem; line-height: 100px;
+    text-align: center; font-family: hy견고딕;
+    background: #f2f2f2;
+}
+
+section {
+
+}
+
+.sec1 {
+    position: relative; top: 0; left: 0;
+
+    width: 100%;
+    border: 0px solid black;
+    /* display: flex; */
+}
+nav, article {
+    position: absolute; top: 0; left: 0;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+/* 왼쪽메뉴 */
+nav {
+    left: 0;
+    width: 15%;
+    height: 1000px;
+    font-size: 1.2rem;
+}
+
+nav div {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #ccc;
+    border-radius: 10px;
+    text-indent: 20px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+nav div:hover {
+    background: black;
+    color: white;
+}
+
+nav div:first-child {
+    margin-bottom: 50px;
+    font-family: hy견고딕;
+}
+nav div:first-child:hover {
+    background: none;
+    color: black;
+    cursor: none;
+}
+
+
+/* 오른쪽 본문 내용 */
+article {
+    left: 15%;
+    width: 85%;
+    height: 2000px;
+    background: white;
+}
+
+/* 양식 - 아티클-3 시작 */
+.at3 {
+    border: 0 solid black;
+}
+/* 아티클-3 끝 */
+
+/* 한식 - 아티클-2 시작 */
+.at2 {
+    border: 0 solid black;
+}
+/* 아티클-2 끝 */
+
+/* 기본적으로 보여지는 아티클-1 */
+
+
+.at1 .small_img {
+    width: 100%;
+    height: 300px;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.at1 .small_img li {
+    width: 20%;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+.at1 .small_img li div {
+    width: 100%;
+    height: 200px;
+    border: 0px solid red;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.at1 .small_img li p:nth-child(2) {
+    
+    margin-top: 10px;
+    border: 0px solid black;
+    line-height: 30px;
+}
+
+.at1 .small_img li .imgBox img {
+    
+    /* width: 100%; */
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.at1 .small_img li div img:hover {
+    transform: scale(1.2);
+}
+
+.at1 .small_img li p {
+    width: 100%;
+    height: 30px;
+    border: 0px solid green;
+    line-height: 40px;    
+    text-indent: 10px;
+}
+
+.at1 .searchBox {
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBox div {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.at1 .searchBox .word{
+
+    width: 80%;
+}
+
+.at1 .searchBox .word input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.at1 .searchBox .find{
+    width: 20%;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.at1 .title3 {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.at1 .back {
+    width: 80%;
+    /* height: 100px; */
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.back img {
+
+    width: 100%;
+    
+}
+
+
+
+
