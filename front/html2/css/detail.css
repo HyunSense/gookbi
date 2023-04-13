@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Happiness-Sans-Bold';
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    text-indent: 3%;
+    
+    /* border: 1px solid black; */
+    border-bottom: 1px solid black;
+}
+
+header nav {
+    /* width: 30%; */
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    border: 0px solid blue;
+    
+}
+
+header nav ul {
+    display: flex;
+    border: 0px solid red;
+}
+
+header nav ul:first-child{
+    width: 20%;
+    border: 0px solid green;
+}
+
+header nav ul:first-child li {
+    width: 100%;
+    border: 0px solid yellow;
+}
+
+/* img */
+.logo li:first-child {
+    width: 60%;
+    border: 0px solid black;
+    text-indent: 0;
+
+}
+
+.logo li:first-child img {
+
+    width: 100%;
+    height: 100px;
+    border: 0px solid pink;
+    
+}
+
+/* logo */
+.logo li:nth-child(2) {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+/* center */
+nav ul:nth-child(2) {
+    width: 70%;
+    border: 0px solid khaki;
+    justify-content: left;
+    justify-content: space-around;
+}
+
+nav ul:nth-child(2) li {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: gray;
+    width: 100%;
+    line-height: 100px;
+    padding-left: 10px;
+    text-align: center;
+    border: 0px solid black;
+    cursor: pointer;
+}
+
+nav ul:nth-child(2) li:hover {
+
+    color: black;
+}
+
+/* right */
+nav ul:nth-child(3) {
+    width: 30%;
+    border: 0px solid black;
+}
+
+nav ul:nth-child(3) li {
+    width: 100%;
+    font-size: 1.2rem;
+    color: rgb(15, 15, 155);
+    border: 0px solid pink;
+    line-height: 100px;
+}
+
+nav ul:nth-child(3) li:hover {
+
+    font-weight: bold;
+}
+
+/* arrow */
+/* nav ul:nth-child(3) li:nth-child(2),
+nav ul:nth-child(3) li:nth-child(4),
+nav ul:nth-child(3) li:nth-child(6) {
+
+    border: 1px solid red;
+
+    width: 20%
+} */
+aside {
+    width: 15%;
+    height: 500px;
+    text-indent: 10%;
+    border: 0px solid black;
+}
+
+aside h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 0px solid black;
+}
+
+aside ul {
+    border: 0px solid red;
+    height: 100%;
+    /* list-style: initial; */
+
+}
+
+aside ul li {
+    border: 0px solid green;
+    height: 8%;
+    font-size: 1.1rem;
+    font-family: 'KIMM_Bold';
+    cursor: pointer;
+}
+
+aside ul li:first-child {
+
+    margin-top: 4%;
+}
+
+aside ul li:hover{
+    background: rgb(18, 36, 206);
+    color: white;
+    line-height: 200%;
+}
+
+section {
+    width: 85%;
+    height: 800px;
+    margin-right: 1%;
+    border: 0px solid black;
+}
+
+main {
+
+    display: flex;
+}
+
+.main_top {
+
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
+    border: 1px solid green;
+}
+
+.main_photo .main_top div{
+    width: 30%;
+    border: 1px solid black;
+}
+
+.main_top div h1 {
+    font-size: 2rem;
+}
+
+.main_top div p {
+    margin-top: 15%;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* .main_top div:nth-child(2) {
+
+} */
+.main_top div:nth-child(2) div {
+    width: 100%;
+    height: 40%;
+    border: 1px solid green;
+}
+
+.main_top div:nth-child(2) div:first-child {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+
+.main_bottom {
+
+    width: 100%;
+    height: 50%;
+    border: 1px solid gold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_bottom div {
+
+    width: 30%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+
+
+
+
+

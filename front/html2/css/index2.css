@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: black;
+}
+
+.at1 {
+    width: 80%; height: 800px;
+    border: 1px soild black;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.at1 div{
+    height: 600px;
+    border: 1px solid blue;
+    margin-top: 100px;
+}
+
+.at1 .menu {
+    width: 200px;
+    margin-right: 50px;
+}
+
+.at1 .menu p {
+
+    
+}
+
+.at1 div:last-child {
+    width: 800px;
+
+}

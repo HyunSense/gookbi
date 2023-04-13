@@ -1,0 +1,55 @@
+/* 외부 스타일 */
+
+p { 
+border: 1px solid blue;
+font-size: 40px;
+width: 500px; height:200px;
+display: inline; 
+/*아래의 display : block 과 반대의 뜻*/
+}
+
+span {
+    border: 1px solid red;
+    width: 500px; height: 200px;
+    /*인라인 요소인 span은 크기 조절 불가능*/
+    display: block; /*인라인 요소를 블록처럼 바꾼다.
+    블록 요소가 되었기때문에 크기 조절이 가능하다.*/
+    
+}
+/*
+div {
+    border: 10 solid black;
+    display: inline-block; inline-block : 인라인이지만 성격은 block 이기때문에 크기 조절이 가능하다.
+    width: 200px;
+}
+*/
+
+h1,h2 {/* , : 다중선택자*/
+    border: 1px solid black;
+}
+
+div { /* 선택자 : Tag, Calss, Id, Name
+        Class : .(점) 으로 표시, 중복 사용 가능 */
+    border: 1px solid skyblue;
+    font-size: 25px;
+    width: 200px; height: 200px;
+    color: white;
+    text-align: center; /* 텍스트,및 이미지 가로 정렬 center : 가로 중앙 정렬*/
+    line-height: 200px; /* 텍스트 및 이미지 높이, div의 height 와 같은 수치일경우 센터로 배치됨*/
+    
+}
+
+.red {
+    /* background 와 background-color 의 차이
+        -color : 색상
+        background : 색상, 그림
+        ex) background 뒤에 -image일 경우 이미지 삽입가능  */
+    background: red;
+}
+.green {
+    background: green;
+    
+}
+.blue {
+    background: blue;
+}
