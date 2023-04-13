@@ -105,9 +105,53 @@ article {
 }
 /* 아티클-3 끝 */
 
-/* 한식 - 아티클-2 시작 */
+/* 일식 - 아티클-2 시작 */
 .at2 {
     border: 0 solid black;
+}
+
+.big img{
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+.at2 .at2_menu {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.at2 .at2_menu li {
+    float: left;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid red;
+}
+
+.at2 .at2_menu li:hover {
+    background: teal;
+    color: white;
+
+}
+
+.at2 .at2_menu li:first-child {
+    border-top-left-radius: 20px;
+    /* border-radius: 20px; */
+}
+
+.at2 .at2_menu li:last-child {
+    border-top-right-radius: 20px;
+}
+
+.at2 .at2_box {
+    clear: both;
+    width: 100%;
+    height: 1000px;
+    border: 1px solid #ccc;
+    padding: 30px;
 }
 /* 아티클-2 끝 */
 
@@ -218,6 +262,14 @@ article {
 
     width: 100%;
     
+}
+
+article {
+    display: none;
+}
+
+.at2{
+    display: block;
 }
 
 
