@@ -32,6 +32,107 @@ header p {
 }
 
 header .home {
+
+}
+
+.na {
     width: 20%;
-    /* margin-left: 20%; */
+}
+
+.at1 {
+    width: 80%; height: 600px;
+    border: 0px solid black;
+    margin: 50px auto;
+    position: relative;
+    top: 0; left: 0;
+}
+
+.at1 img {
+    width: 100%; height: 100%;
+}
+
+.at1 .btn {
+    position: absolute;
+    top: 50%; left: -5%;
+    z-index: 1;
+    width: 110%; height: 50px;
+    border: 0px solid black;
+    justify-content: space-between;
+    display: flex;
+}
+
+.at1 .btn li {
+    line-height: 50px;
+    font-size: 3.3rem;
+    border: 0px solid red;
+    /* margin-bottom: 5px; */
+    cursor: pointer;
+}
+
+.at1 .img6 {
+    width: 100%; 
+    /* height: 500px; */
+    display: flex;
+    /* margin: 50px auto; */
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 0px solid black;
+}
+
+.at1 .img6 li {
+    position: relative;
+    top: 0; left: 0;
+    margin-bottom: 50px;
+    width: 30%; height: 220px;
+    border: 0px solid green;
+    overflow: hidden;
+}
+
+.at1 .img6 li div {
+    width: 100%; height: 100%;
+}
+
+.at1 .img6 li div img {
+    width: 100%; height: 100%;
+}
+
+.at1 .img6 li .img6_text {
+    position: absolute;
+    top: 80%; left: 0;
+    transition: all 0.5s;
+    background: black;
+    color: white;
+}
+
+.at1 .img6 li:hover .img6_text {
+    top: 0;
+}
+
+/* .at1 .img6 li .img6_text p {
+    width: 70%; height: 40px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    line-height: 40px;
+} */
+
+.at1 .img6 li .img6_text p {
+    color: white;
+    height: 40px; line-height: 40px;
+    text-align: center;
+}
+
+.at1 .img6 li .img6_text p:first-child {
+    margin-top: 10px;
+    font-family: hy견고딕;
+    font-size: 1.2rem;
+}
+
+.at1 .img6 li .img6_text p:last-child {
+    
+    width: 30%;
+    margin: 5% auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
 }
