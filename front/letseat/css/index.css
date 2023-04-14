@@ -21,6 +21,7 @@
 html {
     font-size: 16px;
 }
+
 /* 헤더부 */
 header {
     width: 100%;
@@ -163,15 +164,74 @@ header h1 {
     border: 0px solid blue;
 }
 
+/* main2 */
+
+.sec1 .main2 {
+    width: 85%;
+    height: 950px;
+    position: relative; top: 100px;
+    border-left: 1px solid #ccc;
+    background: white;
+    z-index: 1;
+}
+
+.sec1 .main2 .menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 3%;
+    border-top: 1px solid #ccc;
+}
+
+.sec1 .main2 .menu .tab {
+    width: 20%;
+    border: 0px solid red;
+}
+
+.main2 .menu .tab .img_box{
+    width: 100%;
+    height: 80%;
+    border: 0px solid orange;
+
+}
+
+.main2 .menu .tab .img_box img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.main2 .menu .tab .info {
+    width: 100%;
+    height: 30%;
+    border: 0px solid black;
+
+}
+
+.main2 .menu .tab .info p:first-child {
+
+    margin-top: 10%;
+}
+
+.main2 .menu .tab .info p {
+    width: 50%;
+    /* height: 35%; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Dovemayo_gothic';
+    border: 0px solid blue;
+}
 
 
-main {
+.main {
     display: block;
 }
 
 .main2 {
     /* display : block; */
-    /* display: none; */
+    display: none;
 }
 
 

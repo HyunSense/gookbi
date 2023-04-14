@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0; padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+.back {
+    position: fixed; top: 0; left: 0;
+    z-index: -1;
+    width: 100%; height: 100%;
+    background: url(../img/10.jpg);
+    background-size: 100% 100%;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border: 0px solid white;
+    justify-content: space-between;
+}
+
+nav div {
+    width: 10%;
+    height: 100%;
+    border: 0px solid white;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+nav .icon {
+    width: 3%;
+    
+}
+
+nav .bar {
+    position: relative; top: 0; left: 0;
+    width: 13%;
+    /* margin-right: 10%; */
+    border: 0px solid white;
+    text-align: left;
+    text-indent: 10px;
+}
+
+nav .bar:hover ul {
+    left: 0;
+}
+
+nav .bar ul {
+    position: absolute; top: 50px; left: 110%;
+    width: 70%;
+    border: 1px solid #ccc;
+    transition: all 0.5s;
+}
+
+nav .bar ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed white;
+    /* margin: 0 auto; */
+}
+
+/* nav .bar ul li:hover {
+    background: white; 
+    color: black;
+} */
+
+nav .bar ul li:last-child {
+    border-bottom: none;
+}
+
+nav div:nth-child(4) {
+    margin-right: 31%;
+}
+
+nav div:first-child {
+    margin-left: 10%;
+    display: flex;
+}
+
+nav div:first-child p {
+    width: 45%;
+    border: 0px solid red;
+}
+
+nav div:first-child p:first-child {
+    font-family: 'PuradakGentleGothicR';
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+nav div:first-child p:last-child {
+
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 47px;
+}
+
+nav div p:nth-child(2) {
+    width: 10%;
+    font-family: 'PuradakGentleGothicR';
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+    line-height: 35px;
+}
+
+nav div:nth-child(4) {
+
+    margin-right: 31%;
+}
+
+.at1 {
+    position: absolute; top: 50%; left: 50%;
+    width: 1000px; height: 300px;
+    border: 0px solid white;
+    transform: translate(-50%, 0%);
+    color: white;
+    text-align: center;
+    animation: at1_ani 1s;
+}
+@keyframes at1_ani {
+    0% { top: 55%; opacity: 0;}
+    100% { top: 50%; opacity: 1;}
+}
+
+.at1 p {
+    border: 0px solid white;
+    font-size: 2rem;
+    line-height: 70px;
+    animation: at1_p_ani 1s;
+
+}
+
+.at1 div{
+    border: 0px solid white;
+    font-size: 3rem;
+    font-family: hy견고딕;
+    line-height: 100px;
+}
+
+.at1 p:nth-child(3) {
+    
+    font-size: 1.4rem;
+}
+
+.at1 p:first-child {
+    /* font-family: hy견고딕; */
+}
+
+.at1 p:last-child {
+    width: 14%;
+    height: 45px;
+    line-height: 40px;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 3% auto;
+}
+
+.at1 p:last-child:hover {
+
+    transition: all 0.5s;
+    background: #c00f41;
+}
+
+.at2 {
+    position: absolute; top: 100%; left: 0;
+    width: 100%; height: 120%;
+    /* margin-bottom: 100px; */
+    background: white;
+}
+
+.at2 div {
+    margin-top: 5%;
+    text-align: center;
+    border: 0px solid black;
+    font-size: 1.5rem;
+}
+
+.at2 .text2 p:first-child {
+
+    font-size: 2.0rem;
+    font-family: 'PuradakGentleGothicR';
+    /* font-weight: bold; */
+}
+
+.at2 .text2 p:nth-child(2) {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.at2 .text2 p:last-child {
+
+    width: 9%;
+    height: 45px;
+    line-height: 40px;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.at2 .text2 p:last-child:hover {
+    transition: all 0.5s;
+    background: #c00f41;
+}
+
+.at2 .text2 p {
+    width: 40%;
+    height: 40px;
+    margin: 10px auto;
+    border: 0px solid black;
+}
+
+.at2 .image2 {
+    width: 70%;
+    height: 600px;
+    margin: 50px auto;
+    border: 0px solid black;
+}
+
+.at2 .image2 img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.at3 {
+    position: absolute; top: 210%; left: 0;
+    width: 100%; height: 100%;
+    background: #f5f5f5;
+}
+
+.at3 .text3 {
+    margin-top: 5%;
+    text-align: center;
+    border: 0px solid black;
+    font-size: 1.5rem;
+}
+
+.at3 .text3 p:first-child {
+
+    font-size: 3.0rem;
+    font-family: 'PuradakGentleGothicR';
+    /* font-weight: bold; */
+}
+
+.at3 .text3 p:nth-child(2) {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.at3 .text3 p {
+    width: 40%;
+    height: 40px;
+    margin: 40px auto;
+    border: 0px solid black;
+}
+
+.at3 .items {
+    width: 100%; height: 550px;
+    border: 1px solid black;
+}
