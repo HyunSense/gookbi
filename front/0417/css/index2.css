@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.at1 {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.at1 > div {
+    width: 50%; height: 500px;
+    border: 1px solid black;
+}
+
+
+.at1 > div > .big {
+    width: 100%; height: 300px;
+    border: 1px solid black;
+}
+
+.at1 > div > div img {
+    width: 100%; height: 100%;
+}
+
+.at1 div .small{
+    width: 100%; height: 150px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.at1 div .small div {
+    width: 30%; height: 150px;
+}
+
+.at1 div p {
+    height: 100%; height: 50px; 
+    line-height: 50px;
+    text-indent: 50px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+
+span > input {
+    font-size: 1.5rem;
+    text-indent: 30px;
+    width: 100px;
+}
