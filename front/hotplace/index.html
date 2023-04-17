@@ -5,26 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/379c53c8ea.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <title>Ewha Hotplace</title>
 </head>
 <body>
     <!-- 타이틀, 로그인..-->
     <header>
-        <div class="title"></div>
-        <div class="bar"></div>
+        <div class="title">
+            <h1>이 . 대 . 맛 . 집</h1>
+        </div>
+        <ul class="bar">
+            <li>
+                <div>
+                    <i class="fa-regular fa-heart">
+                        <p id="myPick">내가 찜한 수</p>
+                        <span id="heartCount">0</span>
+                    </i>
+                </div>    
+            </li>
+            <li class="login">
+                <input type="text" id="loginId" placeholder="아이디">
+                <!-- <div id="loginId">id</div> -->
+                <input type="text" id="loginPw" placeholder="비밀번호">
+                <!-- <div id="loginPw">pw</div> -->
+                <div>
+                    <button id="btn">로그인</button>
+                </div>
+            </li>
+        </ul>
     </header>
     <!-- 메인 사진, 소개 -->
     <main>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
+        <ul>
+            <li>
+                <div><img src="img/img1.jpg" alt=""></div>
+                <div class="place">다이어트,샐러드</div>
+                <div class="place">초식곳간</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img2.jpg" alt=""></div>
+                <div class="place">돈가스</div>
+                <div class="place">사장님돈까스 이화여대점</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img3.jpg" alt=""></div>
+                <div class="place">떡볶이</div>
+                <div class="place">전골떡볶이 덕미가 이대본점</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img4.jpg" alt=""></div>
+                <div class="place">초밥,롤</div>
+                <div class="place">한끼마끼</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div><img src="img/img5.jpg" alt=""></div>
+                <div class="place">돈가스</div>
+                <div class="place">훈카츠</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img6.jpg" alt=""></div>
+                <div class="place">만두</div>
+                <div class="place">미스터서왕만두</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img7.jpg" alt=""></div>
+                <div class="place">한식</div>
+                <div class="place">모미지식당</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img8.jpg" alt=""></div>
+                <div class="place">샌드위치</div>
+                <div class="place">빵사이에낀과일</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div><img src="img/img9.jpg" alt=""></div>
+                <div class="place">한식</div>
+                <div class="place">불밥 이대본점</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img10.jpg" alt=""></div>
+                <div class="place">태국음식</div>
+                <div class="place">반타이 쏘이54</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img11.jpg" alt=""></div>
+                <div class="place">한식</div>
+                <div class="place">박가네</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+            <li>
+                <div><img src="img/img12.jpg" alt=""></div>
+                <div class="place">스파게티,파스타전문</div>
+                <div class="place">에그 앤드 스푼레이스</div>
+                <i class="fa-solid fa-heart selec" ></i>
+            </li>
+        </ul>
+        <!-- <div>4</div> -->
     </main>
     <!-- 이전 다음 -->
     <div class="paging">
-        
+        <div class="prev">이전</div>
+        <div>1 / 2</div>
+        <div class="next">다음</div>
     </div>
 </body>
 </html>
