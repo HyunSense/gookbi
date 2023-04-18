@@ -190,6 +190,16 @@ main ul li div:first-child{
     border: 1px solid black;
 }
 
+<<<<<<< HEAD
+main div{
+    height: 25%;
+    border:  1px solid purple;
+}
+
+.paging {
+    height: 15%;
+    /* border: 1px solid red; */
+=======
 main ul li div:first-child img {
     width: 100%;
     height: 100%
@@ -248,4 +258,5 @@ main ul li i {
 }
 
 .paging .prev{
+>>>>>>> b2560c39ffd1010aadcda60006c9ba4d8029b8bf
 }

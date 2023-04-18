@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+let count=1
+
+qq.onclick = function() {
+
+    count++;
+    console.log(count)
+}
+=======
 window.onload = function(){
 
     let selecs;
@@ -31,3 +40,4 @@ window.onload = function(){
 
 
 };
+>>>>>>> b2560c39ffd1010aadcda60006c9ba4d8029b8bf
