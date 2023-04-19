@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a{
+    color: black;
+}
+
+nav {
+    width: 100%; height: 50px;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+
+nav div{
+    width: 10%; height: 100%;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+nav div:first-child{
+    margin-right: 5%;
+    
+}
+nav div:nth-child(5){
+    margin-left: 5%;
+
+}
+
+.tab{
+    width: 60%;
+    margin: 50px auto;
+    display: none;
+
+}
+
+table {
+    width: 100%;
+    border: 0px solid black;
+}
+
+table tr {
+
+}
+
+table tr:first-child:hover{
+    background: white;
+}
+
+table tr:hover{
+    background: #f2f2f2;
+}
+
+table tr th {
+
+    height: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #999;
+}
+
+table tr td {
+    height: 40px;
+    text-align: center;
+    border-bottom : 1px dashed #ccc;
+}
+
+table tr td:nth-child(3){
+    text-indent: 100px;
+    text-align: left;
+}
+
+.code {width: 10%; }
+.name {width: 10%; }
+.addr {width: 50%; }
+.tel {width: 20%; }
+.mag {width: 10%; }
+
+.tab .close {
+    width: 70px; height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+.tab .close:hover{
+    background: black;    
+    color: white;
+}
+
+.at1 {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.at1_imgBox {
+    width: 100%; height: 450px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    flex-wrap: wrap; /*넘치면 내려간다?*/
+}
+.at1_imgBox li{
+    width: 23%; height: 200px;
+    border: 1px solid black;
+    cursor: pointer;
+
+    position: relative;
+    top: 0; left: 0;
+}
+
+.at1_imgBox .down {
+    margin-top : 50px;
+}
+
+.at1_imgBox li div {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.482);
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    display: none;
+}
+
+.at1_imgBox li:hover div {
+    display: block;
+}
+.big {
+    position: fixed; 
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.367);
+    color: white;
+    display: none;
+}
+
+/* 자세히 보기에서 큰 그림과 닫기 버튼의 공통부분 */
+.big_close, .big_img {
+   position: absolute; 
+    border: 1px solid white;
+}
+
+
+/* 자세히 보기에서 닫기 */
+.big .big_close{
+    top: 200px; left: 70%;
+    width: 70px; height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 자세히 보기에서 큰 그림 */
+.big .big_img {
+    top: 200px; left: 200px;
+    width: 700px; height: 500px;
+}
+
+/* 자세히 보기에서 큰 그림박스 안에 들어가는 그림 */
+.big .big_img img{
+    width: 100%; height: 100%;
+}

@@ -1,0 +1,22 @@
+.par {
+    width: 1000px; height: 500px;
+    border: 1px solid black;
+    margin: 50px auto;
+    font-size: 30px;
+    color: blue;
+}
+.par .child {
+    width: 500px; height: 300px;
+    margin: 50px auto;
+    border: 1px solid black;
+    color: red;
+    font-size: 30px;
+}
+
+.par .child .son {
+    width: 300px; height: 100px;
+    border: 1px solid black;
+    color: green;
+    margin: 50px auto;
+
+}
