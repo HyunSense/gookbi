@@ -76,9 +76,11 @@ window.onload=function(){
     });
 
     $("#menu div").on("click",function(){
+        $("at").hide();
+        
        n=$(this).index();
        if(n==4) 
-        $(".tab").show();
+        $(".at0").show();
     })
     $(".close").on("click",function(){
         $(".tab").hide();
@@ -126,7 +128,34 @@ window.onload=function(){
             "img6.jpg",
             "img7.jpg",
             "img8.jpg",
-    ]
+    ],
+    
+    title:[
+        "상품명 : 1번",
+        "상품명 : 2번",
+        "상품명 : 3번",
+        "상품명 : 4번",
+    ],
+    sizeA:[
+        "사이즈 :150cm",
+        "사이즈 :250cm",
+        "사이즈 :350cm",
+        "사이즈 :450cm"
+
+    ],
+    colorA:[
+        "색 상 : 빨강",
+        "색 상 : 파랑", 
+        "색 상 : 노랑", 
+        "색 상 : 초록" 
+   ],
+   priceA:[
+    " 가 격 : 2,500 원",
+    " 가 격 : 3,500 원",
+    " 가 격 : 4,500 원",
+    " 가 격 : 5,500 원",
+
+   ]
 
 
 }
@@ -145,13 +174,30 @@ window.onload=function(){
     });
 
     // 제품메뉴 클릭시 나타난 8개 그림을 클릭했을 때 큰그림 보이기
-    $(".at1_imgBox li").on("click", function() {
+    $("#menu div").on("click", function() {
+        $("at").hide();
+
         $(".big").show();
         n=$(this).index();
+        if(n == 1){
+            $(".at1").show();
+            // $(".big").show();
+        }
+
         $("#pic").attr("src","img/" + pumA.img[n]);
+
+        // for(i=0; i<pumA.title.length; i++){
+        //     $(".big_text li:nth-child(" + (i+1) + ")").text()
+        // }
+
+        $(".big_text li:eq(0)").text(pumA.title[n]);
+        $(".big_text li:eq(1)").text(pumA.sizeA[n]);
+        $(".big_text li:eq(2)").text(pumA.colorA[n]);
+        $(".big_text li:eq(3)").text(pumA.priceA[n]);
+
     })
     
-    
+    $(".big_close").css("cursor", "pointer");
     $(".big_close").on("click", function() {
         $(".big").hide();
     })
