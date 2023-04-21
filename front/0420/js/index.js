@@ -22,7 +22,17 @@ const macA={
     sub5A: [
         "버거", "맥런치", "맥모닝", "기타"
     ],
-    bigBoxA: ["img01.jpg","img02.jpg","img03.jpg","img04.jpg","img05.jpg"]
+    bigBoxA: ["img01.jpg","img02.jpg","img03.jpg","img04.jpg","img05.jpg"],
+
+    at17PumA : ["노랑", "파랑", "세사람", "제품들", "두개", "햄버거"],
+    at17ImgA: ["img01.jpg","img02.jpg","img03.jpg","img04.jpg","img05.jpg","img06.jpg"],
+    
+    at17PriceA: [
+        100, 200, 300, 400, 500, 600
+    ]
+
+
+
 }
 
 let i, no, str = "", nav, sub0, sub1, sub2, sub3, sub4, sub5, img5Box;
@@ -75,7 +85,7 @@ window.onload=function(){
         at18_box_img5[ind].style.backgroundSize="100% 100%";
     })
     
-};
+
 
 let timer=setInterval("show()", 5000); // 일정 시간 간격으로 일처리를 반복 동작
 let count = 0;
@@ -90,12 +100,56 @@ function show(){
     $(".choose li").css("background", "white");
     $(".choose li:eq(" + count + ")").css("background","red");
     $(".img5Box").animate({"left":"-=100%"}, 1000, function() {
-        $(".img5Box li:first").appendTo(".img5Box");
+        $(".img5Box li:first").appendTo(".img5Box"); 
         $(".img5Box").css("left","+=100%");
     });
+
+};    
+    // ******************* 아타클-17 시작 *******************
+
+    let at17_no;
+
+    for(i=0; i<macA.at17ImgA.length; i++){
+        $(".at17_left > div:eq(" + i + ")").css("background", "url(img/" + macA.at17ImgA[i] +")")
+                                         .css("backgroundSize", "100% 100%");
+    }
+    // 6개 그림을 클릭하면
+    $(".at17_left > div").on("click", function(){  
+        at17_no = $(this).index();
+        console.log(macA.at17PriceA[at17_no]);
+        $(".at17_pum").html("상품명 : " + macA.at17PumA[at17_no]);
+    })
+    
+    
+    $(".at17_su").on("click", function(){
+        su = $(".at17_su").val();
+        kum = macA.at17PriceA[at17_no] * su;
+        console.log(su, kum);
+        $(".at17_price").html(parseInt(kum) + "원");
+    })
+    
+    
+    $(".at17_ok").on("click", function(){
+        // su = $(".at17_su").val();
+        // console.log(su);
+        // kum = macA.at17PriceA[at17_no] * su;
+        $(".at17_result").html(macA.at17PumA[at17_no] + "</p>" + kum + "결제완료")
+        $(".at17_popup").show();
+    });
+
+    $(".at17_popup_close").on("click",function(){
+        $(".at17_popup").hide();
+
+    })
+
+
+  
+    // ******************* 아타클-17 끝 *******************
+
 }
 
 $(function(){ // onload 작업이끝나면 실행, 제이쿼리 작업 영역
+
 
 
     $(".choose li:eq(0)").css("background", "red");
@@ -106,6 +160,7 @@ $(function(){ // onload 작업이끝나면 실행, 제이쿼리 작업 영역
         $(".choose li").css("background", "white");
         $(".choose li:eq(" + count + ")").css("background","red");
     })
+
 
 
 

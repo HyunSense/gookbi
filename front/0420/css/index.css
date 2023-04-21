@@ -158,17 +158,102 @@ nav .subBox ul li:hover{
     display: block;
 } */
 
-.at18 {
+/* .at17 {
     display: block;
+} */
+
+
+/* 아티클 17 ------------ */
+.at17 {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
+
+.at17 > div{
+    width: 700px; height: 500px;
+    border: 1px solid black;
+    padding: 30px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.at17_left > div {
+    width: 30%; height: 200px;
+    border: 10px solid blue;
+    position: relative; top: 0; left: 0;
+    overflow: hidden;
+}
+
+.at17_left > div:hover div {
+    top: 0;
+}
+
+.at17_left > div > div{
+    transition: all 0.5s;
+    position: absolute; top: 100%; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.751);
+    border: 5px solid red;
+    color: white;
+    z-index: 10;
+    font-size: 2rem;
+}
+
+.at17_right {
+    /* display: block; */
+}
+
+.at17_right > p {
+    width: 100%; height: 50px;
+    line-height: 50px;
+    border: 1px solid red;
+}
+
+.at17_popup {
+    position: fixed; top: 50px; left: 200px;
+    width: 300px; height: 400px;
+    background: white;
+    display: none;
+    border: 3px solid green;
+}
+
+.at17_popup li {
+    width: 100%;
+    text-align: center;
+}
+
+.at17_popup li:nth-child(1){
+    height: 50px; line-height: 50px; 
+    background: black;
+    color: white;
+}
+
+.at17_popup li:nth-child(2){
+    height: 230px;
+    line-height: 100px;
+    border: 1px solid black;
+}
+
+.at17_popup li:nth-child(3){
+    width: 100px; height: 50px;
+    line-height: 50px;
+    margin: 50px auto;
+    border: 1px solid black;
+    background: white;
+
+}
+
+/* 아티클 18 --------- */
 
 .at18_box{
     width: 1000px; height: 300px;
     margin: 0px auto;
     /* margin-top: 300px; */
     border: 1px solid black;
-
     position: relative; top: 0; left: 0;
+    overflow: hidden;
 }
 
 .at18_box .at18_box_img5  {
@@ -186,7 +271,7 @@ nav .subBox ul li:hover{
     border: solid 1px red;
 }
 
-.at18 .choose {
+.at18 .choose2 {
     width: 200px; height: 30px;
     /* border: 1px solid red; */
     margin: 30px auto;
@@ -194,13 +279,15 @@ nav .subBox ul li:hover{
     justify-content: space-evenly;
 }
 
-.at18 .choose li {
+.at18 .choose2 li {
     width: 30px; height: 30px;
     border: 1px solid #ccc;
     border-radius: 100%;
     background: white;
     text-align: center;
     line-height: 30px;
+    cursor: pointer;
+    
 
 }
 

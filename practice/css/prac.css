@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#section1{
+
+    width: 100%; height: 1000px;
+    /* border: 1px solid black; */
+}
+
+#section1 h1 {
+    margin: 40px;
+}
+
+#section1 div{
+    width: 100%; height: 200px;
+    border: 1px solid black;
+}

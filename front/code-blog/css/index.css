@@ -1,0 +1,148 @@
+body{ 
+    width: 100%; height: 2000px;
+}
+
+.at1 {
+
+    position: relative; top: 0; left: 0;
+    
+}
+
+#sec1 {
+    
+    z-index: 1;
+    width: 100%; height: 400px;
+    /* border: 1px solid black; */
+}
+
+
+#title {
+    width: 100%; height: 30%;
+    border: 1px solid black;
+    line-height: 140px;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    background: black;
+}
+
+#tags-box {
+    position: absolute;
+    width: 100%; height: 70%;
+
+}
+
+#tags-box #tags {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%; height: 60%;
+    cursor: pointer;
+    /* border: 1px solid green; */
+    
+}
+
+
+#tags .tag-bar {
+    width: 100%; height: 33%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+
+#tags .tag {
+    
+    height: 70%;
+    margin: 0 12px 16px 12px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+    padding: 5px 10px 0 10px;
+    border: 1px solid black;
+}
+
+.tag-bar .tag:hover {
+    color: #FF153C;
+    background: black;
+
+}
+
+#sec2 {
+    position: absolute; top: 400px; left: 0;
+    z-index: 2;
+    width: 100%; height: 1600px;
+    /* border: 1px solid red; */
+    /* display: none; */
+}
+
+#sec2 .img-box {
+    margin: 0 auto;
+    width: 70%; height: 1600px;
+    /* border: 1px solid blue; */
+    
+}
+
+#sec2 .img-box .img-bar {
+    position: relative; top: 0; left: 0;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 25%;
+    /* border: 1px solid orange; */
+
+}
+
+#sec2 .img-box .img-bar img{
+    /* position: absolute; */
+    margin: 0 25px 0 25px;
+    width: 20%; height: 75%;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* opacity: 0.7; */
+}
+
+/* section3------------------------- */
+
+
+#sec3 {
+    position: absolute; top: 400px; left: 0; 
+    z-index: 3;
+    width: 100%; height: 1600px;
+    /* border: 1px solid red; */
+    /* display: none; */
+}
+
+#sec3 .img-box {
+    margin: 0 auto;
+    width: 70%; height: 1600px;
+    /* border: 1px solid blue; */
+    
+}
+
+#sec3 .img-box .img-bar {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 25%;
+    /* border: 1px solid orange; */
+
+}
+
+#sec3 .img-box .img-bar div{
+    margin: 0 25px 0 25px;
+    width: 20%; height: 75%;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.752);
+    /* opacity: 0.7; */
+}
+
+#sec3 .img-box div div p {
+    width: 100%; height: 100%;
+    text-indent: 10px;
+    text
+    border: 5px solid red;
+    color: white;
+}
