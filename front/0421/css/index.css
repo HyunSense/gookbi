@@ -1,0 +1,46 @@
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    position: relative; 
+    top: 0; left: 0;
+    width: 100%; height: 1000px;
+    border: 1px solid black;
+}
+
+.quick {
+    position: fixed; top: 50%; right: 0;
+    transform : translateY(-50%);
+    z-index: 99;
+    width: 100px;
+}
+.quick li {
+    width: 100%; height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.quick li:hover {
+    background: lightgoldenrodyellow;
+    color: white;
+}
+
+
+.quick li:hover {
+    background: lightskyblue;
+    color: white;
+}
+
+.quick li a {
+    display: block;
+    width: 100%; height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

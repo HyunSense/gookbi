@@ -12,7 +12,7 @@ btn.onclick = function(){
     price = 5000 * su_value;
 
     total.innerHTML = price + " 원";
-
+    
 
 
     }

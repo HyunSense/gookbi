@@ -13,11 +13,34 @@ $(function(){
 
 $("button").on("click",function click(){
     // var num = $(this).attr("value");
+<<<<<<< HEAD
     calcVal = $(this).text();
     console.log("calcVal = " + calcVal);
 
 
     inputResult += calcVal;
+=======
+
+    
+    calcVal = $(this).text();
+    console.log("calcVal = " + calcVal);
+    
+    if(calcVal == "()"){
+
+        inputResult += "(";
+        $("input").attr("value", inputResult);
+        // console.log("Bar Test = " + inputResult)
+
+        if(inputResult.includes("(")){
+            // inputResult += ")";
+            // $("input").attr("value", inputResult);
+        // console.log("Bar Test = " + inputResult)
+        }
+    }else{
+
+    inputResult += calcVal;
+    
+>>>>>>> 5253aea84f46308971eba918d0e7719fb960a80e
 
     console.log("inputResult = " + inputResult);
 
@@ -37,7 +60,11 @@ $("button").on("click",function click(){
         inputResult = "";
         $("input").attr("value", inputResult);
     }
+<<<<<<< HEAD
 
+=======
+}
+>>>>>>> 5253aea84f46308971eba918d0e7719fb960a80e
 });
 
 // function inputCalc(){

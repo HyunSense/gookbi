@@ -223,6 +223,11 @@ main ul li i {
     
     bottom: 225px;
     left: 355px;
+    cursor: pointer;
+}
+
+main ul li i:hover{
+    color: red;
 }
 
 
@@ -247,5 +252,6 @@ main ul li i {
 
 }
 
-.paging .prev{
-}
+/* .fa-solid, .fa-heart, .selec{
+    color: red;
+} */
