@@ -11,16 +11,18 @@ window.onload = function(){
 
         // console.log("arrow--");
         $(this).animate({rotate:"+=180deg"}, 400);
-        $(".noticeTable").animate({height:"toggle"}, 400);
+        $(".noticeTable").stop().animate({height:"toggle"}, 400);
 
     });
 
     $(bgBlack).each(function(i){
         $(bgBlack[i]).hover(function(){
         console.log("hovering--");
-        $(imgTitle[i]).stop().animate({left:"80px",top:"100px"},300);
+        // $(imgTitle[i]).stop().animate({left:"80px",top:"100px"},300);
+        $(imgTitle[i]).stop().animate({left:"99px",top:"100px"},300);
     },function(){
-        $(imgTitle[i]).stop().animate({left:"12px",top:"205px"},300);
+        // $(imgTitle[i]).stop().animate({left:"12px",top:"180px"},300);
+        $(imgTitle[i]).stop().animate({left:"12px",top:"240px"},300);
         // $(imgTitle[i]).stop();
     });
 
