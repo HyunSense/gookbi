@@ -59,20 +59,12 @@ header {
     /* border: 1px solid red; */
 }
 
-.headRight .findDiv {
+/* .headRight .findDiv {
     height: 100%;
-    /* border: 1px solid red; */
-}
+} */
 
 .findDiv .findTag {
     /* border: 1px solid black; */
-}
-
-.findDiv .findTag, .findClick {
-    font-size: 20px;
-    font-family: "Noto Sans KR", sans-serif;
-    height: 100%;
-    /* border: 1px solid red; */
 }
 
 .menuList li {
@@ -274,7 +266,7 @@ main {
 .layout4 {
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
     justify-content: center;
     /* display: none; */
     /* border: 1px solid black; */
@@ -342,6 +334,69 @@ main {
     /* border: 1px solid red; */
 }
 
+.findDiv {
+    width: 20%; height: 60px;
+    display: flex;
+    margin: 25px auto 0;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+}
+
+.findDiv .findTag {
+    width: 80%;
+    font-size: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    /* border: 1px solid #ff3e5e; */
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    text-indent: 13px;
+    background: #f2f2f2;
+    
+    
+}
+
+.findDiv .findTag:focus {
+    outline: none;
+}
+
+.findDiv .findClick {
+    width: 20%;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: 20px; */
+    background: #ff3e5e;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    /* border: 1px solid blue; */
+    font-family: "Noto Sans KR", sans-serif;
+    transition: ease-in-out 0.3s;
+}
+
+.findClick span {
+    display: flex;
+    width: 100%; height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    font-size: 50px;
+    /* text-align: center; */
+}
+
+.findClick:hover {
+    color: #ff3e5e;
+    background: black;
+}
+
+/* .findDiv .findTag, .findClick {
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    border: 1px solid red;
+} */
+
+
+
 
 
 .contain .item img {
@@ -355,17 +410,28 @@ main {
     /* border: 1px solid black; */
 }
 
-
-.layout5 {
+.overRay {
     position: fixed; top: 0; left: 0;
     z-index: 5;
-    width: 100%; 
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* opacity: 0; */
+    transition: opacity 3;
+    display: none;
+    pointer-events: auto;
+    /* border: 5px solid red; */
+}
+.layout5 {
+    position: fixed; top: 1000px; left: 25%;
+    z-index: 5;
+    width: 50%; 
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 0 auto;
+    /* align-items: center; */
     /* display: none; */
-    border: 1px solid black;
+    /* border: 1px solid blue; */
 }
 
 .layout5 .scrollInner {
@@ -374,31 +440,25 @@ main {
     width: 100%; height: 100%;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding: 50px 0;
     /* border: 1px solid blue; */
 }
 
+.layout5 .showDetail::-webkit-scrollbar {
+    display: none;
 
-/* .layout5 .scrollInner {
-    position: absolute;
-    z-index: 99;
-    display: flex;
-    width: 100%; height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    padding: 50px 0;
-} */
-
+}
 
 .layout5 .showDetail {
+    
     position: absolute;
-
-    width: 50%; height: 100%;
+    width: 100%; height: 100%;
     z-index: 6;
     overflow-y: scroll;
-    border: 1px solid black;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* border: 1px solid black; */
     
 }
 
