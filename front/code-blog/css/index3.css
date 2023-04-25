@@ -547,35 +547,192 @@ main {
     margin-bottom: 7px;
 }
 
-/* footer {
+/* 로그인 뷰------------------- */
 
-    border: 1px solid black;
-    width: 100%; height: 150px;
-    margin-top: 100px;
-    background: white;
-} */
-
-
-/* .layout4 .contain .item .imgTitle {
-    position: absolute; top: 0%; left: 0;
-    display: flex;
+/* .lgLayout {
     width: 100%; height: 100%;
-    text-align: left;
-    align-items: end;
-    background: black;
-    border-radius: 10px;
-    opacity: 0.75;
-    padding: 0 0 5px 5px;
-    font-size: 17px;
-    cursor: pointer;
+    position: fixed; top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.727);
+    margin: 0 auto;
+
+}
+
+
+
+
+.lgLayout .loginMain {
+    position: absolute; top:60%; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%; height: 300px;
+    margin: 0 auto;
+    background-color: #191919;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition: all 0.3s;
+
+}
+
+.loginMain .loginView {
+    width: 80%; height: 60%;
+    margin-bottom: 5px;
+}
+
+.idView, .pwView {
+    width: 100%; height: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+.pwView {
+
+    margin-top: 15px;
+
+}
+
+.loginView input {
+    text-indent: 5px;
+    font-size: 20px;
+    width: 100%; height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    background: #dedede;
+    border-radius: 5px;
+
+}
+
+.loginView input:focus {
+
+    outline: none;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    margin-top: 15px;
+}
+
+.loginBtn button {
+    width: 100%; height: 100%;
+    font-size: 20px;
+    background: #ff153c;
     color: white;
-    transition: ease-in-out 0.3s;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.loginBtn button:hover {
+
+    background-color: #cc1030;
 } */
 
-/* .layout4 .contain .item .imgTitle:hover {
+/* 로그인 뷰-----------------END */
 
-    background: black;
-    opacity: 0.85;
-} */
+
+
+.lgLayout {
+
+    width: 100%; height: 100%;
+
+}
+
+
+@keyframes loginAni {
+
+    0% {
+        top: 500px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.lgLayout .loginMain {
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%; height: 300px;
+    margin: 0 auto;
+    background-color: #191919;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+    animation: loginAni 0.5s;
+    display: none;
+}
+
+.loginMain .loginView {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; height: 60%;
+    margin-bottom: 5px;
+    /* border: 2px solid blue; */
+    
+}
+
+.idView, .pwView {
+    width: 100%; height: 30%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+.pwView {
+
+    margin-top: 15px;
+
+}
+
+.loginView input {
+    text-indent: 5px;
+    font-size: 20px;
+    width: 100%; height: 100%;
+    /* border: 1px solid red; */
+    font-family: "Noto Sans KR", sans-serif;
+    background: #dedede;
+    border-radius: 5px;
+
+}
+
+.loginView input:focus {
+
+    outline: none;
+}
+
+.loginView .loginBtn {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+
+.loginBtn button {
+    width: 100%; height: 100%;
+    font-size: 20px;
+    background: #ff153c;
+    color: white;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+.loginBtn button:hover {
+
+    background-color: #cc1030;
+}
 

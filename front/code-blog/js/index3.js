@@ -18,7 +18,7 @@ window.onload = function(){
         console.log("hovering--");
         $(imgTitle[i]).stop().animate({left:"87px",top:"100px"},300);
     },function(){
-        $(imgTitle[i]).stop().animate({left:"12px",top:"238px"},300);
+        $(imgTitle[i]).stop().animate({left:"12px",top:"213px"},300);
     });
 
     });
@@ -30,6 +30,7 @@ window.onload = function(){
         $(bgBlack[i]).on("click",function(){
         // $(".layout5").animate({top:"50px"},400).show();    
         $(".layout5").animate({top:"50px"},400).show(); 
+        // $(".layout5").show();
         $(".overRay").show();   
         });
     });
@@ -46,6 +47,27 @@ window.onload = function(){
         $(".layout5").hide();
         $(this).hide();
     });
+
+    // $(".loginMain").hide();
+    // $(".lgLayout").hide();
+
+
+
+    // $(".menuLogin").on("click",function(){
+    //     console.log("click");
+    //     $("lgLayout").show();
+    //     $(".loginMain").show();
+    //     // $(".afm").show();
+    //     // $(".loginMain").hasClass("efm");
+    //     $(".loginMain").animate({top:"200px"},300);
+    // });
+
+    $(".menuLogin").on("click",function(){
+        $(".loginMain").show();
+
+    })
+
+   
     
 
 

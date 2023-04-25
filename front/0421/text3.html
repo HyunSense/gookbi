@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="js/test.js"></script> -->
+    <link rel="stylesheet" href="text1.css">
+    <title>Document</title>
+    <style>
+        
+        .box {
+
+        width: 800px; height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between
+        }
+
+        .box button {
+        border-radius: 5px;
+        width: 200px; height: 100%;
+        cursor: pointer;
+
+        }
+
+        .box button:hover {
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+        }
+
+        .text {
+        text-align: center;
+        line-height: 40px;
+        margin-top: 20px;
+        font-size: 20px;
+        width: 800px; height: 40px;
+        border: 1px solid black;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+        $(".btn1").on("click",function(){
+
+        $(".text").html("2023 갤럭시북3");
+
+        });
+        $(".btn2").on("click",function(){
+
+        $(".text").text("2023 LG 그램");
+
+        });
+        $(".btn3").on("click",function(){
+
+        $(".text").text("2023 Mac1 맥북");
+
+        });
+    }
+    </script>
+</head>
+<body>
+    <section class="box">
+        <button type="button" class="btn1">버튼-1</button>
+        <button type="button" class="btn2">버튼-2</button>
+        <button type="button" class="btn3">버튼-3</button>
+    </section>
+    <div class="text"></div>
+</body>
+</html>
